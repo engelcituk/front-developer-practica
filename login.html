@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
@@ -67,6 +67,14 @@
             flex-direction: column;
         }
 
+        .form a {
+            color: var(--hospital-green);
+            font-size: var(--sm);
+            text-align: center;
+            text-decoration: none;
+            margin-bottom: 54px;
+        }
+
         .label {
             font-size: var(--sm);
             font-weight: bold;
@@ -81,11 +89,28 @@
             padding: 6px;
             margin-bottom: 12px;
         }
+
+        .input-email{
+            margin-bottom: 22px;
+        }
+
         .primary-button{
             background-color: var(--hospital-green);
             border-radius: 8px;
             border: none;
             color: var(--white);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+        }
+
+        .secondary-button{
+            background-color: var(--white);
+            border-radius: 8px;
+            border: 1px solid var(--hospital-green);
+            color: var(--hospital-green);
             width: 100%;
             cursor: pointer;
             font-size: var(--md);
@@ -110,18 +135,22 @@
     <div class="login">
         <div class="form-container">
             <img src="./logos/logo_yard_sale.svg" alt="logo"class="logo"/>
-            <h1 class="title">Create a new password</h1>
-            <p class="subtitle">Enter a new password for your account</p>
-
+         
             <form action=""class="form">
+                <label for="email" class="label">Email address</label>
+                <input type="email" id="email" placeholder="johndoe@mail.com" class="input input-email"/>
+
                 <label for="password"class="label">Password</label>
-                <input type="password" id="password" placeholder="*********"class="input input-password"/>
+                <input type="password" id="password" placeholder="*********" class="input input-password"/>
 
-                <label for="new-password"class="label">Re-enter password</label>
-                <input type="password" id="new-password" placeholder="*********"class="input input-password"/>
+                <input type="submit" value="Log in" class="primary-button login-button"/>
 
-                <input type="submit" value="Confirm"class="primary-button login-button"/>
+                <a href="/">Forgot my password</a>
+
             </form>
+
+            <button class="secondary-button signup-button">Sign up</button>
+
         </div>
     </div>
 </body>
