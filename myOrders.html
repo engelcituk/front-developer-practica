@@ -49,13 +49,11 @@
          }
          .order{
             display: grid;
-            grid-template-columns: auto 1fr;
+            grid-template-columns: auto 1fr auto;
             gap: 16px;
-            background-color: var(--text-input-field);
-            margin-bottom: 24px;
-            border-radius: 8px;
+            margin-bottom: 12px;
             align-items: center;
-            padding: 0 24px;
+            
          }
          .order p:nth-child(1){
             display: flex;
@@ -73,34 +71,12 @@
             font-size: var(--md);
             color: var(--very-light-pink)
          }
-         .shopping-cart {
-            display: grid;
-            grid-template-columns: auto 1fr auto auto;
-            gap: 16px;
-            margin-bottom: 24px;
-            align-items: center;
-         }
-         .shopping-cart figure {
-            margin: 0;
-         }
-         .shopping-cart figure img{
-            width: 70px;
-            height: 70px;
-            border-radius: 20px;
-            object-fit: cover;
-         }
-         .shopping-cart p:nth-child(2){
-            color: var(--very-light-pink);
-         }
-         .shopping-cart p:nth-child(3){
-            font-size: var(--md);
-            font-weight: bold;
-         }
+       
 </style>
 <body>
     <div class="my-order">
         <div class="my-order-container">
-            <h1 class="title">My order</h1>
+            <h1 class="title">My orders</h1>
             <div class="my-order-content">
                 <div class="order">
                     <p>
@@ -110,35 +86,50 @@
                     <p>
                         $570.00
                     </p>
+                    <img src="./icons/flechita.svg" alt="">
                 </div>
-                <div class="shopping-cart">
-                    <figure>
-                        <img src="./img/bike.jpeg" alt="" class="product-img" >
-                    </figure>
-                    <p>Bike</p>
-                    <p>$450.00</p>
+                <div class="order">
+                    <p>
+                        <span>01-10-2022</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p>
+                        $570.00
+                    </p>
+                    <img src="./icons/flechita.svg" alt="">
                 </div>
-                <div class="shopping-cart">
-                    <figure>
-                        <img src="./img/bike.jpeg" alt="" class="product-img" >
-                    </figure>
-                    <p>Bike</p>
-                    <p>$450.00</p>
+                <div class="order">
+                    <p>
+                        <span>01-10-2022</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p>
+                        $570.00
+                    </p>
+                    <img src="./icons/flechita.svg" alt="">
                 </div>
-                <div class="shopping-cart">
-                    <figure>
-                        <img src="./img/bike.jpeg" alt="" class="product-img" >
-                    </figure>
-                    <p>Bike</p>
-                    <p>$450.00</p>
+
+                <div class="order">
+                    <p>
+                        <span>01-10-2022</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p>
+                        $570.00
+                    </p>
+                    <img src="./icons/flechita.svg" alt="">
                 </div>
-                <div class="shopping-cart">
-                    <figure>
-                        <img src="./img/bike.jpeg" alt="" class="product-img" >
-                    </figure>
-                    <p>Bike</p>
-                    <p>$450.00</p>
+                <div class="order">
+                    <p>
+                        <span>01-10-2022</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p>
+                        $570.00
+                    </p>
+                    <img src="./icons/flechita.svg" alt="">
                 </div>
+                
             </div>
         </div>
 
